@@ -155,7 +155,7 @@ button {
 }
 
 body.theme-dark .logo img {
-    
+    filter: invert(1);
 }
 
 .logo i {
