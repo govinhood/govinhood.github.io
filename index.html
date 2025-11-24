@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional photography portfolio by Govinda Sharma - People, Wildlife, Nature, Landscape, and Night Photography">
+    <meta name="keywords" content="photography, portfolio, wildlife, nature, landscape, people photography, Nepal">
+    <meta name="author" content="Govinda Sharma">
+    <title>Govinda Sharma - Professional Photography</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <img src="images/logo.png">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-slide active" style="background-image: url('images/img/c%20(66).jpg')"></div>
+            <div class="hero-slide" style="background-image: url('images/img/img(10).jpg')"></div>
+            <div class="hero-slide" style="background-image: url('images/img/img(11).jpg')"></div>
+            <div class="hero-slide" style="background-image: url('images/img/img(12).jpg')"></div>
+            <div class="hero-slide" style="background-image: url('images/img/img(13).jpg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">Capturing Life's Beautiful Moments</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Professional Photography | Wildlife | Nature | People</p>
+            <div class="hero-buttons animate-fade-in-delay-2">
+                <a href="#gallery" class="btn btn-primary">View Gallery</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <button class="hero-nav hero-prev" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="hero-nav hero-next" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/thumb/c (1).jpg" alt="Govinda Sharma - Photographer" onerror="this.src='images/thumb/c (12).jpg'">
+                    
+                </div>
+                <div class="about-text">
+                    <h3>Govinda Sharma</h3>
+                    <p class="subtitle">Professional Photographer</p>
+                    <p>With over a decade of experience in photography, I specialize in capturing the essence of life through my lens. From the raw beauty of wildlife to the intimate moments of people, each photograph tells a unique story.</p>
+                    <p>Based in Nepal, I have had the privilege of documenting diverse landscapes, vibrant cultures, and breathtaking natural wonders. My work reflects a deep passion for visual storytelling and a commitment to excellence in every shot.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>500+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>10+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>300+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio Gallery</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Explore my collection of captivating photographs across different genres</p>
+            </div>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="people">People</button>
+                <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="landscape">Landscape</button>
+                <button class="filter-btn" data-filter="night">Night</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- People Photography -->
+                <div class="gallery-item" data-category="people">
+                    <img src="images/thumb/c (1223).jpg" alt="People Photography">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Candid Moments</h4>
+                            <p>People Photography</p>
+                            <button class="view-btn" data-src="images/img/img(10).jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wildlife -->
+                <div class="gallery-item" data-category="wildlife">
+                    <img src="images/thumb/c (10).jpg" alt="Wildlife Photography">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Birds in Flight</h4>
+                            <p>Wildlife Photography</p>
+                            <button class="view-btn" data-src="images/img/img(11).jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nature -->
+                <div class="gallery-item" data-category="nature">
+                    <img src="images/thumb/c (11).jpg" alt="Nature Photography">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Natural Beauty</h4>
+                            <p>Nature Photography</p>
+                            <button class="view-btn" data-src="images/img/img(12).jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Landscape -->
+                <div class="gallery-item" data-category="landscape">
+                    <img src="images/thumb/c (12).jpg" alt="Mountain Landscape">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Mountain Majesty</h4>
+                            <p>Landscape Photography</p>
+                            <button class="view-btn" data-src="images/img/img(13).jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Night -->
+                <div class="gallery-item" data-category="night">
+                    <img src="images/thumb/c (13).jpg" alt="Night Photography">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Nightscapes</h4>
+                            <p>Night Photography</p>
+                            <button class="view-btn" data-src="images/img/img(14).jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Heritage -->
+                <div class="gallery-item" data-category="people">
+                    <img src="images/thumb/c (14).jpg" alt="Heritage Photography">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Cultural Heritage</h4>
+                            <p>Heritage Photography</p>
+                            <button class="view-btn" data-src="images/img/img(15).jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Moon -->
+                <div class="gallery-item" data-category="night">
+                    <img src="images/thumb/c (15).jpg" alt="Moon Photography">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Lunar Beauty</h4>
+                            <p>Night Photography</p>
+                            <button class="view-btn" data-src="images/img/img(16).jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wedding -->
+                <div class="gallery-item" data-category="people">
+                    <img src="images/thumb/c (16).jpg" alt="Wedding Photography">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Wedding Moments</h4>
+                            <p>Wedding Photography</p>
+                            <button class="view-btn" data-src="images/img/img(17).jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Candid -->
+                <div class="gallery-item" data-category="people">
+                    <img src="images/thumb/c (17).jpg" alt="Candid Photography">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Candid Stories</h4>
+                            <p>Street Photography</p>
+                            <button class="view-btn" data-src="images/img/img(18).jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Professional photography services tailored to your needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Portrait Photography</h3>
+                    <p>Professional portrait sessions capturing your personality and essence in stunning detail.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Individual & Family Portraits</li>
+                        <li><i class="fas fa-check"></i> Professional Headshots</li>
+                        <li><i class="fas fa-check"></i> Studio & Outdoor Sessions</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Wedding Photography</h3>
+                    <p>Comprehensive wedding coverage to preserve your special day's precious moments forever.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Full Day Coverage</li>
+                        <li><i class="fas fa-check"></i> Engagement Sessions</li>
+                        <li><i class="fas fa-check"></i> Custom Albums & Prints</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Landscape & Nature</h3>
+                    <p>Breathtaking landscape and nature photography for prints, publications, and collections.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Landscape Photography</li>
+                        <li><i class="fas fa-check"></i> Wildlife Documentation</li>
+                        <li><i class="fas fa-check"></i> Fine Art Prints</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Commercial Photography</h3>
+                    <p>High-quality commercial photography for businesses, products, and corporate events.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Product Photography</li>
+                        <li><i class="fas fa-check"></i> Corporate Events</li>
+                        <li><i class="fas fa-check"></i> Brand Photography</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Night Photography</h3>
+                    <p>Specialized night photography capturing stars, cityscapes, and low-light environments.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Astrophotography</li>
+                        <li><i class="fas fa-check"></i> City Nightscapes</li>
+                        <li><i class="fas fa-check"></i> Long Exposure Art</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Event Photography</h3>
+                    <p>Professional coverage of corporate events, parties, and special celebrations.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Corporate Events</li>
+                        <li><i class="fas fa-check"></i> Private Parties</li>
+                        <li><i class="fas fa-check"></i> Cultural Events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Let's discuss your photography needs and bring your vision to life</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Location</h4>
+                        <p>Kathmandu, Nepal</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@govindasharma.com">info@govindasharma.com</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+9779800000000">+977 980-0000000</a></p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Govinda Sharma</h3>
+                    <p>Professional Photography</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Govinda Sharma Photography. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-prev" id="lightboxPrev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" id="lightboxNext">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <img src="" alt="Gallery Image" id="lightboxImg">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
