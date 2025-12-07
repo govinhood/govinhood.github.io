@@ -115,6 +115,34 @@ button {
 }
 
 /* ===================================
+   RADIO
+   =================================== */
+
+.radio-player {
+    text-align: center;
+    padding: 20px 10px;
+}
+.play-btn {
+    padding: 8px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    background: #ef4444;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.play-btn:hover {
+    background: #d93737;
+}
+
+
+/* ===================================
    NAVIGATION
    =================================== */
 

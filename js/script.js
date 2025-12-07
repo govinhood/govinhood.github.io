@@ -57,6 +57,58 @@ document.addEventListener('DOMContentLoaded', function() {
         startHeroSlideshow();
     }
 
+// ===================================
+    // Radio
+    // ===================================
+const radio = document.getElementById("radio");
+const playBtn = document.getElementById("playBtn");
+const btnTime = document.getElementById("btnTime");
+const icon = document.getElementById("icon");
+
+let seconds = 0;
+let timer = null;
+
+// Format HH:MM:SS
+function formatTime(sec) {
+    let h = Math.floor(sec / 3600).toString().padStart(2, '0');
+    let m = Math.floor((sec % 3600) / 60).toString().padStart(2, '0');
+    let s = (sec % 60).toString().padStart(2, '0');
+    return `${h}:${m}:${s}`;
+}
+
+// Start timer
+function startTimer() {
+    timer = setInterval(() => {
+        seconds++;
+        btnTime.textContent = formatTime(seconds);
+    }, 1000);
+}
+
+// Stop timer
+function stopTimer() {
+    clearInterval(timer);
+}
+
+playBtn.addEventListener("click", () => {
+    if (radio.paused) {
+        radio.play();
+        icon.textContent = "⏸";       // only change icon
+        startTimer();
+    } else {
+        radio.pause();
+        icon.textContent = "▶";
+        stopTimer();
+    }
+});
+
+// Reset on end
+radio.addEventListener("ended", () => {
+    stopTimer();
+    seconds = 0;
+    btnTime.textContent = "00:00:00";
+    icon.textContent = "▶";
+});
+
     // ===================================
     // NAVIGATION
     // ===================================
