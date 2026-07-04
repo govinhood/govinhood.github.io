@@ -833,7 +833,7 @@
         </div>
     </footer>
 
-    <!-- Lightbox -->
+   <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
         <button class="lightbox-close" id="lightboxClose">
             <i class="fas fa-times"></i>
@@ -847,51 +847,40 @@
         <img src="" alt="Gallery Image" id="lightboxImg">
     </div>
 
-    <script src="js/script.js"></script>
     <script>
         (function hideAccessibilityLanguageOption() {
           const selector = '.snn-language-selector';
-
           function findInOpenShadow(root = document) {
             const direct = root.querySelector(selector);
             if (direct) return direct;
-
             const allElements = root.querySelectorAll('*');
-
             for (const el of allElements) {
               if (el.shadowRoot) {
                 const found = findInOpenShadow(el.shadowRoot);
                 if (found) return found;
               }
             }
-
             return null;
           }
-
           function hide() {
             const languageSelector = findInOpenShadow();
-
             if (languageSelector) {
               languageSelector.style.display = 'none';
             }
           }
-
           hide();
-
           new MutationObserver(hide).observe(document.body, { childList: true, subtree: true });
         })();
     </script>
-<script>
+    <script>
       window.ACCESSIBILITY_WIDGET_CONFIG = {
         enableVoiceControl: false,
         enableScreenReader: false,
-
         widgetWidth: '400px',
         colors: {
           primary: '#0066cc',
           secondary: '#ffffff'
         },
-
         widgetPosition: {
           side: 'left',
           left: '50%',
@@ -899,9 +888,10 @@
         }
       };
     </script>
-<script src="https://unpkg.com/accessibility-widgets@latest/widget.js"></script>
+    <script src="https://unpkg.com/accessibility-widgets@latest/widget.js"></script>
 
-<script src="js/script.js"></script>
+    <!-- Main JavaScript File (Only Loaded Once Now) -->
+    <script src="js/script.js"></script>
     
     <!-- PWA Registration Script -->
     <script>
@@ -913,7 +903,7 @@
             });
         }
     </script>
-    
-    <!-- Rest of your existing accessibility scripts below... -->
 </body>
+    <!-- Rest of your existing accessibility scripts below... -->
+
 </html>
