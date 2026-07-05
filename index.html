@@ -10,12 +10,6 @@
     <link rel="icon" type="image/png" href="images/icn.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <link rel="manifest" href="manifest.json">
-<!-- Fallback for older iOS Safari styling -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="Govinhood">
 </head>
 <body>
     <!-- Navigation -->
@@ -900,20 +894,5 @@
       };
     </script>
 <script src="https://unpkg.com/accessibility-widgets@latest/widget.js"></script>
-
-<script src="js/script.js"></script>
-    
-    <!-- PWA Registration Script -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(reg => console.log('Service Worker registered successfully!', reg))
-                    .catch(err => console.log('Service worker registration failed:', err));
-            });
-        }
-    </script>
-    
-    <!-- Rest of your existing accessibility scripts below... -->
 </body>
 </html>
